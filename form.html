@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylish Form</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://i.ibb.co/C97xxVM/FITZONE-20240920-170320-0000-photoaidcom-cropped.png" type="image/png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('back.jpg') no-repeat center center;
+            color: #ff0000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .form-container {
+            background-color: #000000;
+            padding: 10px;
+            border-radius: 8px;
+            border: 2px solid #ff0000;
+            width: 400px;
+            box-shadow: 0 0 12px rgba(255, 0, 0, 0.8); /* Enhanced glowing effect */
+            margin: 20px;
+            
+        }
+        
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #ff0000;
+            text-shadow: 0 0 6px rgba(255, 0, 0, 0.8); /* Light red text glow */
+        }
+        .form-container label {
+            display: block;
+            margin-bottom: 5px;
+            color: #ff0000;
+        }
+        .form-container input[type="text"],
+        .form-container input[type="number"],
+        .form-container input[type="email"],
+        .form-container select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ff0000;
+            border-radius: 4px;
+            background-color: #000000;
+            color: #ffffff;
+            box-shadow: 0 0 6px rgba(255, 0, 0, 0.6); /* Enhanced glowing effect */
+        }
+        .form-container input[type="submit"] {
+            width: 100%;
+            background-color: #ff0000;
+            color: #000000;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            box-shadow: 0 0 6px rgba(255, 0, 0, 0.6); /* Enhanced glowing effect */
+        }
+        .form-container input[type="submit"]:hover {
+            background-color: #ff3333;
+        }
+        .success-message {
+            display: none;
+            text-align: center;
+            color: #00ff00;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">☰</label>
+    <div class="logo-container">
+        <img src="https://i.ibb.co/P61MKq4/FITZONE-logo.png" alt="FitZone Logo" class="logo-img">
+        <label class="logo-text">FitZone</label>
+    </div>
+    <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+    </ul>
+</nav>
+
+<div class="form-container">
+    <h2>Sign Up</h2>
+    <form action="https://script.google.com/macros/s/AKfycbyammifFyEV5w2lC50aDzHDURwHdJdB0AyvsRfYiMRF0rFv0hi8ePDVzZ9MR9wuMzt5/exec" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="" disabled selected>Select your gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+        <label for="name">Subject:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="name">Classes:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="city">City:</label>
+        <select id="city" name="city" required>
+            <option value="" disabled selected>Select your city</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Bengaluru">Bengaluru</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Ahmedabad">Ahmedabad</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Kolkata">Kolkata</option>
+            <option value="Pune">Pune</option>
+            <option value="Jaipur">Jaipur</option>
+            <option value="Surat">Surat</option>
+        </select>
+
+        <input type="submit" value="Submit">
+    </form>
+</div>
+</body>
+</html>
